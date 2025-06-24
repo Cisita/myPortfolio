@@ -10,21 +10,6 @@
   <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/5.png" alt="图片5" style="width: 18%;transition: transform 0.3s ease; cursor: pointer;" />
 </div>
 
-<div style="display: flex; justify-content: space-between; gap: 15px;">
-  <img 
-    src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/1.png?raw=true" 
-    alt="图片1" 
-    style="
-      width: 18%; 
-      transition: transform 0.3s ease; 
-      transform-origin: center;
-    "
-    onmouseover="this.style.transform='scale(1.05)'" 
-    onmouseout="this.style.transform='scale(1)'"
-  >
-  <!-- 其他图片同理 -->
-</div>
-
 ### 项目概要
 该项目针对“伴学”这一社会痛点问题进行研究，集成面部情感洞察引擎、深度姿态识别模型、智慧学澜系统三大自研发技术成果，研发智能教育机器人产品，集成AI语音交互、学习数据分析等功能。
 ### 个人职责
