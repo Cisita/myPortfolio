@@ -20,7 +20,6 @@
 5. 统筹路演，负责协调团队彩排，**优化演讲逻辑**，精准控制路演时间（5分钟误差±10秒）。
 6. 建立共享素材库，**标准化设计规范**，减少重复修改次数50%
 ### 项目奖项
-![获奖情况2](https://github.com/Cisita/myPortfolio/blob/main/imageicon/2%23.png)
 ![获奖情况3](https://github.com/Cisita/myPortfolio/blob/main/imageicon/3%23.png)
 ![获奖情况4](https://github.com/Cisita/myPortfolio/blob/main/imageicon/4%23.png)
 #### 2024.7---“挑战杯”湖南省金奖
