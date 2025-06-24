@@ -1,6 +1,13 @@
 # 项目集
 ## 第十四届“挑战杯”项目——《“习成智伴”-基于多维智感分析技术的智慧家教领航引擎》
 项目周期2024.5-2025.2，感谢与我们共同奋斗的伙伴，感谢所有支持我们的朋友与老师。
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/1.png" alt="图片1" style="width: 18%;" />
+  <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/2.png" alt="图片2" style="width: 18%;" />
+  <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/3.png" alt="图片3" style="width: 18%;" />
+  <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/14.png" alt="图片4" style="width: 18%;" />
+  <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/5.png" alt="图片5" style="width: 18%;" />
+</div>
  ![路演PPT](https://github.com/Cisita/myPortfolio/blob/main/imageicon/1.png?raw=tru)
 ### 项目概要
 该项目针对“伴学”这一社会痛点问题进行研究，集成面部情感洞察引擎、深度姿态识别模型、智慧学澜系统三大自研发技术成果，研发智能教育机器人产品，集成AI语音交互、学习数据分析等功能。
