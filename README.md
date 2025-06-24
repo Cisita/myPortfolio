@@ -29,19 +29,23 @@
 ## 校园选课管理系统
 项目周期2025.3-2025.5
 
-<div style="display:flex;gap:15px;max-width:1200px;margin:0 auto;">
-  <div style="flex:1;display:flex;flex-direction:column;gap:8px">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" alt="长图1" style="width:30%;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.1)">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/b.png?raw=true" alt="长图2" style="width:30%;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.1)">
+<div style="display: flex; flex-direction: row; gap: 15px;">
+  <!-- 左侧容器：两个长图垂直排列 -->
+  <div style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" style="width: 35%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/b.png?raw=true" style="width: 35%; border-radius: 8px; object-fit: contain;">
   </div>
-  <div style="flex:1;display:flex;flex-direction:column;gap:8px">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/c.png?raw=true" alt="长条图1" style="width:35%;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.1)">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/d.png?raw=true" alt="长条图2" style="width:35%;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.1)">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/e.png?raw=true" alt="长条图3" style="width:35%;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.1)">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/f.png?raw=true" alt="长条图4" style="width:35%;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.1)">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/g.png?raw=true" alt="长条图5" style="width:35%;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.1)">
+  
+  <!-- 右侧容器：四个长条图垂直排列 -->
+  <div style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/c.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/d.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/e.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/f.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/g.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
   </div>
 </div>
+
 
 ### 项目概要
 在《系统分析与设计》课程实践中，为加深对系统开发全流程的理解，我们 3 人小组开展学生选课服务与管理系统课程设计项目。我负责文档撰写、测试用例设计、开发前端交互开发，实现了登录注册、选补退课、生成班级、查询课表等页面。
