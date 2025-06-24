@@ -31,8 +31,8 @@
 
 <div style="display: flex; flex-direction: row; gap: 15px;">
   <div style="flex: 1; display: flex; flex-direction: row; gap: 15px;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" style="width: 20%; border-radius: 8px; object-fit: contain;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/b.png?raw=true" style="width: 20%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/b.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
   </div>
   <div style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
     <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/c.png?raw=true" style="width: 25%; border-radius: 8px; object-fit: contain;">
