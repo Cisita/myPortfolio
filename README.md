@@ -29,54 +29,6 @@
 ## 校园选课管理系统
 项目周期2025.3-2025.5
 
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: repeat(5, 1fr); gap: 15px; min-height: 500px;">
-  <!-- 图A - 占据第一列所有行 -->
-  <div style="grid-column: 1; grid-row: 1 / span 5;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" style="width: 20%; height: 20%; border-radius: 8px; object-fit: cover;">
-  </div>
-  
-  <!-- 图B - 占据第二列所有行 -->
-  <div style="grid-column: 2; grid-row: 1 / span 5;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/b.png?raw=true" style="width: 20%; height: 20%; border-radius: 8px; object-fit: cover;">
-  </div>
-  
-  <!-- 图C - 占据第三列第1行 -->
-  <div style="grid-column: 3; grid-row: 1;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/c.png?raw=true" style="width: 50%; height: 50%; border-radius: 8px; object-fit: cover;">
-  </div>
-  
-  <!-- 图D - 占据第三列第2行 -->
-  <div style="grid-column: 3; grid-row: 2;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/d.png?raw=true" style="width: 50%; height: 50%; border-radius: 8px; object-fit: cover;">
-  </div>
-  
-  <!-- 图E - 占据第三列第3行 -->
-  <div style="grid-column: 3; grid-row: 3;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/e.png?raw=true" style="width: 50%; height: 50%; border-radius: 8px; object-fit: cover;">
-  </div>
-  
-  <!-- 图F - 占据第三列第4行 -->
-  <div style="grid-column: 3; grid-row: 4;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/f.png?raw=true" style="width: 50%; height: 50%; border-radius: 8px; object-fit: cover;">
-  </div>
-  
-  <!-- 图G - 占据第三列第5行 -->
-  <div style="grid-column: 3; grid-row: 5;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/g.png?raw=true" style="width: 50%; height: 50%; border-radius: 8px; object-fit: cover;">
-  </div>
-</div>
-
-
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:repeat(5,1fr);gap:15px;min-height:500px">
-  <div style="grid-column:1;grid-row:1/6"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" style="w:100%;h:100%;br:8px;object-fit:cover"></div>
-  <div style="grid-column:2;grid-row:1/6"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/b.png?raw=truee" style="w:100%;h:100%;br:8px;object-fit:cover"></div>
-  <div style="grid-column:3;grid-row:1"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/c.png?raw=true" style="w:100%;h:100%;br:8px;object-fit:cover"></div>
-  <div style="grid-column:3;grid-row:2"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/d.png?raw=true" style="w:100%;h:100%;br:8px;object-fit:cover"></div>
-  <div style="grid-column:3;grid-row:3"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/e.png?raw=true" style="w:100%;h:100%;br:8px;object-fit:cover"></div>
-  <div style="grid-column:3;grid-row:4"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/f.png?raw=true" style="w:100%;h:100%;br:8px;object-fit:cover"></div>
-  <div style="grid-column:3;grid-row:5"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/g.png?raw=true" style="w:100%;h:100%;br:8px;object-fit:cover"></div>
-</div>
-
 <div style="display: flex; flex-direction: row; gap: 15px;">
   <div style="flex: 1; display: flex; flex-direction: row; gap: 15px;">
     <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" style="width: 20%; border-radius: 8px; object-fit: contain;">
