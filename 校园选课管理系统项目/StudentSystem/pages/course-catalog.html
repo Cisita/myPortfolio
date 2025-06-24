@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程目录 - 学生课程管理系统</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="学校Logo" id="school-logo">
+            <h1>学生课程管理系统</h1>
+        </div>
+        <div class="user-info">
+            <span id="current-user">未登录</span>
+            <button id="login-btn">登录</button>
+            <button id="logout-btn" style="display: none;">退出</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link"><i class="bi bi-arrow-left"></i> 返回首页</a>
+        
+        <div class="page-header">
+            <h2 class="page-title">课程目录</h2>
+        </div>
+
+        <div class="filter-controls">
+            <div class="filter-item">
+                <label for="search-course">搜索：</label>
+                <input type="text" id="search-course" placeholder="输入课程名称或教师姓名">
+            </div>
+            <div class="filter-item">
+                <label for="filter-category">课程类型：</label>
+                <select id="filter-category">
+                    <option value="">全部</option>
+                    <option value="必修课">必修课</option>
+                    <option value="选修课">选修课</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label for="filter-credit">学分：</label>
+                <select id="filter-credit">
+                    <option value="">全部</option>
+                    <option value="2">2学分</option>
+                    <option value="3">3学分</option>
+                    <option value="4">4学分</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label for="filter-day">上课日：</label>
+                <select id="filter-day">
+                    <option value="">全部</option>
+                    <option value="周一">周一</option>
+                    <option value="周二">周二</option>
+                    <option value="周三">周三</option>
+                    <option value="周四">周四</option>
+                    <option value="周五">周五</option>
+                </select>
+            </div>
+            <button id="apply-filter" class="btn btn-primary">应用筛选</button>
+            <button id="reset-filter" class="btn">重置</button>
+        </div>
+
+        <div class="view-switcher">
+            <span>视图：</span>
+            <button id="card-view-btn" class="btn btn-sm active">卡片</button>
+            <button id="table-view-btn" class="btn btn-sm">表格</button>
+        </div>
+
+        <!-- 卡片视图 -->
+        <div id="card-view" class="card-view">
+            <!-- 卡片内容将由JavaScript动态生成 -->
+        </div>
+
+        <!-- 表格视图 -->
+        <div id="table-view" style="display: none;">
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>课程编号</th>
+                            <th>课程名称</th>
+                            <th>学分</th>
+                            <th>课时</th>
+                            <th>授课教师</th>
+                            <th>上课时间</th>
+                            <th>课程类型</th>
+                            <th>剩余名额</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="course-table-body">
+                        <!-- 表格内容将由JavaScript动态生成 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 课程详情模态框 -->
+    <div id="course-detail-modal" class="modal">
+        <div class="modal-content wide">
+            <span class="close">&times;</span>
+            <div id="course-detail-content">
+                <!-- 课程详情内容将由JavaScript动态生成 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 登录模态框 -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>用户登录</h2>
+            <div class="login-form">
+                <div class="form-group">
+                    <label for="username">用户名：</label>
+                    <input type="text" id="username" placeholder="请输入学号/工号">
+                </div>
+                <div class="form-group">
+                    <label for="password">密码：</label>
+                    <input type="password" id="password" placeholder="请输入密码">
+                </div>
+                <div class="form-group">
+                    <label>用户类型：</label>
+                    <div class="radio-group">
+                        <input type="radio" id="student" name="userType" value="student" checked>
+                        <label for="student">学生</label>
+                        <input type="radio" id="teacher" name="userType" value="teacher">
+                        <label for="teacher">教师</label>
+                        <input type="radio" id="admin" name="userType" value="admin">
+                        <label for="admin">管理员</label>
+                    </div>
+                </div>
+                <button id="login-submit">登录</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 学生课程管理系统 - 版权所有</p>
+    </footer>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/extra-data.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/course-catalog.js"></script>
+</body>
+</html> 

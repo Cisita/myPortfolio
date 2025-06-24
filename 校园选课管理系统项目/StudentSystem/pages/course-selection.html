@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选课管理 - 学生课程管理系统</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="学校Logo" id="school-logo">
+            <h1>学生课程管理系统</h1>
+        </div>
+        <div class="user-info">
+            <span id="current-user">未登录</span>
+            <button id="login-btn">登录</button>
+            <button id="logout-btn" style="display: none;">退出</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link"><i class="bi bi-arrow-left"></i> 返回首页</a>
+        
+        <div class="page-header">
+            <h2 class="page-title">选课管理</h2>
+            <div class="action-buttons">
+                <button id="submit-selection-btn" class="btn btn-primary">提交选课</button>
+                <button id="go-to-catalog-btn" class="btn">浏览课程目录</button>
+            </div>
+        </div>
+
+        <div class="nav-tabs">
+            <div class="nav-tab active" data-tab="selection-cart">选课单</div>
+            <div class="nav-tab" data-tab="selected-courses">已选课程</div>
+        </div>
+
+        <div id="selection-cart-tab" class="tab-content">
+            <div class="section-header">
+                <h3>待提交课程</h3>
+                <p>选择以下课程，点击"提交选课"按钮完成选课</p>
+            </div>
+
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th width="40"><input type="checkbox" id="select-all"></th>
+                            <th>课程编号</th>
+                            <th>课程名称</th>
+                            <th>学分</th>
+                            <th>授课教师</th>
+                            <th>上课时间</th>
+                            <th>剩余名额</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="selection-cart-body">
+                        <!-- 选课单内容将由JavaScript动态生成 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="selected-courses-tab" class="tab-content" style="display: none;">
+            <div class="section-header">
+                <h3>已选课程</h3>
+                <p>以下是您已经成功选择的课程</p>
+            </div>
+
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>课程编号</th>
+                            <th>课程名称</th>
+                            <th>学分</th>
+                            <th>授课教师</th>
+                            <th>上课时间</th>
+                            <th>选课时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="selected-courses-body">
+                        <!-- 已选课程内容将由JavaScript动态生成 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 退课确认模态框 -->
+    <div id="withdraw-confirm-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>退课确认</h2>
+            <p>您确定要退选以下课程吗？</p>
+            <div id="withdraw-course-info"></div>
+            <div class="modal-actions" style="margin-top: 20px; text-align: right;">
+                <button id="withdraw-confirm-btn" class="btn btn-danger">确认退课</button>
+                <button id="withdraw-cancel-btn" class="btn">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 登录模态框 -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>用户登录</h2>
+            <div class="login-form">
+                <div class="form-group">
+                    <label for="username">用户名：</label>
+                    <input type="text" id="username" placeholder="请输入学号/工号">
+                </div>
+                <div class="form-group">
+                    <label for="password">密码：</label>
+                    <input type="password" id="password" placeholder="请输入密码">
+                </div>
+                <div class="form-group">
+                    <label>用户类型：</label>
+                    <div class="radio-group">
+                        <input type="radio" id="student" name="userType" value="student" checked>
+                        <label for="student">学生</label>
+                        <input type="radio" id="teacher" name="userType" value="teacher">
+                        <label for="teacher">教师</label>
+                        <input type="radio" id="admin" name="userType" value="admin">
+                        <label for="admin">管理员</label>
+                    </div>
+                </div>
+                <button id="login-submit">登录</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 学生课程管理系统 - 版权所有</p>
+    </footer>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/extra-data.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/course-selection.js"></script>
+</body>
+</html> 

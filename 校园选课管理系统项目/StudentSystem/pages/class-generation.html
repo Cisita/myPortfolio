@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成教学班级 - 学生课程管理系统</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="学校Logo" id="school-logo">
+            <h1>学生课程管理系统</h1>
+        </div>
+        <div class="user-info">
+            <span id="current-user">未登录</span>
+            <button id="login-btn">登录</button>
+            <button id="logout-btn" style="display: none;">退出</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link"><i class="bi bi-arrow-left"></i> 返回首页</a>
+        
+        <div class="page-header">
+            <h2 class="page-title">生成教学班级</h2>
+            <div class="action-buttons">
+                <button id="generate-class-btn" class="btn btn-primary">一键生成班级</button>
+                <button id="add-class-btn" class="btn">手动添加班级</button>
+            </div>
+        </div>
+
+        <div class="nav-tabs">
+            <div class="nav-tab active" data-tab="class-list">班级列表</div>
+            <div class="nav-tab" data-tab="classroom-management">教室管理</div>
+        </div>
+
+        <div id="class-list-tab" class="tab-content">
+            <div class="filter-controls">
+                <div class="filter-item">
+                    <label for="filter-course">课程：</label>
+                    <select id="filter-course">
+                        <option value="">全部课程</option>
+                        <!-- 课程选项将由JavaScript动态生成 -->
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="filter-teacher">教师：</label>
+                    <select id="filter-teacher">
+                        <option value="">全部教师</option>
+                        <!-- 教师选项将由JavaScript动态生成 -->
+                    </select>
+                </div>
+                <button id="apply-class-filter" class="btn btn-primary">筛选</button>
+                <button id="reset-class-filter" class="btn">重置</button>
+            </div>
+
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>班级编号</th>
+                            <th>班级名称</th>
+                            <th>课程名称</th>
+                            <th>班主任</th>
+                            <th>教室</th>
+                            <th>学生人数</th>
+                            <th>创建时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="class-list-body">
+                        <!-- 班级列表内容将由JavaScript动态生成 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="classroom-management-tab" class="tab-content" style="display: none;">
+            <div class="section-header">
+                <h3>教室列表</h3>
+                <p>管理所有可用教室</p>
+            </div>
+
+            <div class="filter-controls">
+                <div class="filter-item">
+                    <label for="filter-building">教学楼：</label>
+                    <select id="filter-building">
+                        <option value="">全部</option>
+                        <option value="教学楼A">教学楼A</option>
+                        <option value="教学楼B">教学楼B</option>
+                        <option value="教学楼C">教学楼C</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="filter-capacity">容量：</label>
+                    <select id="filter-capacity">
+                        <option value="">全部</option>
+                        <option value="40">&gt;= 40人</option>
+                        <option value="50">&gt;= 50人</option>
+                        <option value="60">&gt;= 60人</option>
+                    </select>
+                </div>
+                <button id="apply-classroom-filter" class="btn btn-primary">筛选</button>
+                <button id="reset-classroom-filter" class="btn">重置</button>
+            </div>
+
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>教室编号</th>
+                            <th>教学楼</th>
+                            <th>房间号</th>
+                            <th>容量</th>
+                            <th>设备</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="classroom-list-body">
+                        <!-- 教室列表内容将由JavaScript动态生成 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 班级详情模态框 -->
+    <div id="class-detail-modal" class="modal">
+        <div class="modal-content wide">
+            <span class="close">&times;</span>
+            <div id="class-detail-content">
+                <!-- 班级详情内容将由JavaScript动态生成 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 生成班级模态框 -->
+    <div id="generate-class-modal" class="modal">
+        <div class="modal-content wide">
+            <span class="close">&times;</span>
+            <h2>生成教学班级</h2>
+            <div class="form-container">
+                <div class="form-row">
+                    <label class="form-label">课程选择</label>
+                    <div id="course-selection">
+                        <!-- 课程选择项将由JavaScript动态生成 -->
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label class="form-label" for="max-class-size">班级最大人数</label>
+                    <input type="number" id="max-class-size" class="form-input" value="50" min="20" max="100">
+                </div>
+                <div class="form-row">
+                    <label class="form-label">分班规则</label>
+                    <div class="radio-group">
+                        <input type="radio" id="rule-major" name="group-rule" value="major" checked>
+                        <label for="rule-major">按专业分班</label>
+                        <input type="radio" id="rule-grade" name="group-rule" value="grade">
+                        <label for="rule-grade">按年级分班</label>
+                        <input type="radio" id="rule-mixed" name="group-rule" value="mixed">
+                        <label for="rule-mixed">混合分班</label>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button id="submit-generate-btn" class="btn btn-primary">生成班级</button>
+                    <button id="cancel-generate-btn" class="btn">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 添加班级模态框 -->
+    <div id="add-class-modal" class="modal">
+        <div class="modal-content" style="width: 600px;">
+            <span class="close">&times;</span>
+            <h2>手动添加班级</h2>
+            <div class="form-container">
+                <div class="form-row">
+                    <label class="form-label" for="class-name">班级名称</label>
+                    <input type="text" id="class-name" class="form-input" placeholder="如：数据结构1班">
+                </div>
+                <div class="form-row">
+                    <label class="form-label" for="class-course">所属课程</label>
+                    <select id="class-course" class="form-select">
+                        <option value="">-- 请选择课程 --</option>
+                        <!-- 课程选项将由JavaScript动态生成 -->
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label class="form-label" for="class-teacher">班主任</label>
+                    <select id="class-teacher" class="form-select">
+                        <option value="">-- 请选择教师 --</option>
+                        <!-- 教师选项将由JavaScript动态生成 -->
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label class="form-label" for="class-classroom">教室</label>
+                    <select id="class-classroom" class="form-select">
+                        <option value="">-- 请选择教室 --</option>
+                        <!-- 教室选项将由JavaScript动态生成 -->
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button id="submit-add-class-btn" class="btn btn-primary">添加班级</button>
+                    <button id="cancel-add-class-btn" class="btn">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 登录模态框 -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>用户登录</h2>
+            <div class="login-form">
+                <div class="form-group">
+                    <label for="username">用户名：</label>
+                    <input type="text" id="username" placeholder="请输入学号/工号">
+                </div>
+                <div class="form-group">
+                    <label for="password">密码：</label>
+                    <input type="password" id="password" placeholder="请输入密码">
+                </div>
+                <div class="form-group">
+                    <label>用户类型：</label>
+                    <div class="radio-group">
+                        <input type="radio" id="student" name="userType" value="student" checked>
+                        <label for="student">学生</label>
+                        <input type="radio" id="teacher" name="userType" value="teacher">
+                        <label for="teacher">教师</label>
+                        <input type="radio" id="admin" name="userType" value="admin">
+                        <label for="admin">管理员</label>
+                    </div>
+                </div>
+                <button id="login-submit">登录</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 学生课程管理系统 - 版权所有</p>
+    </footer>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/extra-data.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/class-generation.js"></script>
+</body>
+</html> 
