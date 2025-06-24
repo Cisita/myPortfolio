@@ -30,19 +30,16 @@
 项目周期2025.3-2025.5
 
 <div style="display: flex; flex-direction: row; gap: 15px;">
-  <!-- 左侧容器：两个长图垂直排列 -->
-  <div style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" style="width: 25%; border-radius: 8px; object-fit: contain;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/b.png?raw=true" style="width: 25%; border-radius: 8px; object-fit: contain;">
+  <div style="flex: 1; display: flex; flex-direction: row; gap: 15px;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" style="width: 20%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/b.png?raw=true" style="width: 20%; border-radius: 8px; object-fit: contain;">
   </div>
-  
-  <!-- 右侧容器：四个长条图垂直排列 -->
   <div style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/c.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/d.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/e.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/f.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/g.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/c.png?raw=true" style="width: 25%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/d.png?raw=true" style="width: 25%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/e.png?raw=true" style="width: 25%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/f.png?raw=true" style="width: 25%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/g.png?raw=true" style="width: 25%; border-radius: 8px; object-fit: contain;">
   </div>
 </div>
 
