@@ -29,6 +29,38 @@
 ## 校园选课管理系统
 项目周期2025.3-2025.5
 
+<!-- 5行3列网格布局，前两列各占1张图，第三列5张图垂直排列 -->
+<div style="display:grid;             /* 使用网格布局 */
+            grid-template-columns:1fr 1fr 1fr; /* 3等宽列 */
+            grid-template-rows:repeat(5,1fr); /* 5等高行 */
+            gap:12px;                   /* 网格间距 */
+            max-width:900px;            /* 最大宽度 */
+            margin:0 auto;              /* 居中显示 */
+            border-radius:8px;          /* 容器圆角 */
+            overflow:hidden;">          /* 隐藏溢出内容 */
+            
+  <!-- 图A：占据第1列所有5行 -->
+  <div style="grid-column:1;grid-row:1/6;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" 
+         style="width:100%;height:100%;border-radius:6px;object-fit:cover;">
+  </div>
+  
+  <!-- 图B：占据第2列所有5行 -->
+  <div style="grid-column:2;grid-row:1/6;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/b.png?raw=true" 
+         style="width:100%;height:100%;border-radius:6px;object-fit:cover;">
+  </div>
+  
+  <!-- 图C-G：占据第3列第1-5行 -->
+  <div style="grid-column:3;grid-row:1;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/c.png?raw=true" style="w:100%;h:100%;border-radius:6px;object-fit:cover;"></div>
+  <div style="grid-column:3;grid-row:2;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/d.png?raw=true" style="w:100%;h:100%;border-radius:6px;object-fit:cover;"></div>
+  <div style="grid-column:3;grid-row:3;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/e.png?raw=true" style="w:100%;h:100%;border-radius:6px;object-fit:cover;"></div>
+  <div style="grid-column:3;grid-row:4;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/f.png?raw=true" style="w:100%;h:100%;border-radius:6px;object-fit:cover;"></div>
+  <div style="grid-column:3;grid-row:5;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/g.png?raw=true" style="w:100%;h:100%;border-radius:6px;object-fit:cover;"></div>
+  
+</div>
+
+
 <div style="display: flex; flex-direction: row; gap: 15px; width: 800px; hight: 900px">
   <div style="flex: 1; display: flex; flex-direction: row; gap: 15px; width: 430px; hight: 900px">
     <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" style="width: 27%; border-radius: 8px; object-fit: contain;">
