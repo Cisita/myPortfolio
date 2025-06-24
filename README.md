@@ -42,21 +42,21 @@
   <!-- 图A：占据第1列所有5行 -->
   <div style="grid-column:1;grid-row:1/6;">
     <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" 
-         style="width:100%;height:100%;border-radius:6px;object-fit:cover;">
+         style="width:27%;height:27%;border-radius:6px;object-fit:cover;">
   </div>
   
   <!-- 图B：占据第2列所有5行 -->
   <div style="grid-column:2;grid-row:1/6;">
     <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/b.png?raw=true" 
-         style="width:100%;height:100%;border-radius:6px;object-fit:cover;">
+         style="width:27%;height:27%;border-radius:6px;object-fit:cover;">
   </div>
   
   <!-- 图C-G：占据第3列第1-5行 -->
-  <div style="grid-column:3;grid-row:1;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/c.png?raw=true" style="w:100%;h:100%;border-radius:6px;object-fit:cover;"></div>
-  <div style="grid-column:3;grid-row:2;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/d.png?raw=true" style="w:100%;h:100%;border-radius:6px;object-fit:cover;"></div>
-  <div style="grid-column:3;grid-row:3;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/e.png?raw=true" style="w:100%;h:100%;border-radius:6px;object-fit:cover;"></div>
-  <div style="grid-column:3;grid-row:4;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/f.png?raw=true" style="w:100%;h:100%;border-radius:6px;object-fit:cover;"></div>
-  <div style="grid-column:3;grid-row:5;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/g.png?raw=true" style="w:100%;h:100%;border-radius:6px;object-fit:cover;"></div>
+  <div style="grid-column:3;grid-row:1;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/c.png?raw=true" style="w:25%;h:25%;border-radius:6px;object-fit:cover;"></div>
+  <div style="grid-column:3;grid-row:2;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/d.png?raw=true" style="w:25%;h:25%;border-radius:6px;object-fit:cover;"></div>
+  <div style="grid-column:3;grid-row:3;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/e.png?raw=true" style="w:25%;h:25%;border-radius:6px;object-fit:cover;"></div>
+  <div style="grid-column:3;grid-row:4;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/f.png?raw=true" style="w:25%;h:25%;border-radius:6px;object-fit:cover;"></div>
+  <div style="grid-column:3;grid-row:5;"><img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/g.png?raw=true" style="w:25%;h:25%;border-radius:6px;object-fit:cover;"></div>
   
 </div>
 
