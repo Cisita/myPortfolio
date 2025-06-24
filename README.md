@@ -29,12 +29,12 @@
 ## 校园选课管理系统
 项目周期2025.3-2025.5
 
-<div style="display: flex; flex-direction: row; gap: 15px;">
-  <div style="flex: 1; display: flex; flex-direction: row; gap: 15px;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
-    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/b.png?raw=true" style="width: 30%; border-radius: 8px; object-fit: contain;">
+<div style="display: flex; flex-direction: row; gap: 15px; width: 800px; hight: 900px">
+  <div style="flex: 1; display: flex; flex-direction: row; gap: 15px; width: 430px; hight: 900px">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/a.png?raw=true" style="width: 27%; border-radius: 8px; object-fit: contain;">
+    <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/b.png?raw=true" style="width: 27%; border-radius: 8px; object-fit: contain;">
   </div>
-  <div style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
+  <div style="flex: 1; display: flex; flex-direction: column; gap: 15px; width: 370px;hight: 900px">
     <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/c.png?raw=true" style="width: 25%; border-radius: 8px; object-fit: contain;">
     <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/d.png?raw=true" style="width: 25%; border-radius: 8px; object-fit: contain;">
     <img src="https://github.com/Cisita/myPortfolio/blob/main/imageicon/e.png?raw=true" style="width: 25%; border-radius: 8px; object-fit: contain;">
